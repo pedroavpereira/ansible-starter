@@ -15,7 +15,7 @@ resource "aws_default_vpc" "default" {
 }
 
 resource "aws_instance" "http_server" {
-  count                  = 2
+  count                  = 1
   ami                    = "INSERT AMI HERE"
   key_name               = "default-ec2"
   instance_type          = "t2.micro"
